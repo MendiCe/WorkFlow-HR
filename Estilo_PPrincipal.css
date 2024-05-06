@@ -93,6 +93,7 @@ body h2 {
 }
 
 .contenedor {
+    color:#9DEDEE;
     display: flex;
     height: 80px;
     gap: 25px;
