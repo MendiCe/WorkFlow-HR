@@ -1,0 +1,148 @@
+/*---------------Estilo general---------------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*font-size: 18px;*/
+}
+
+/*---------------estilo para el header---------------*/
+
+header {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px;
+    background-color: #29adaf;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+.header .logo img {
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+div {
+    text-decoration: none;
+    color: #476a6b;
+}
+
+.header .nav-link{
+    list-style: none;
+}
+
+.header .nav-link li {
+    display: inline-block;
+}
+
+.header .nav-link a {
+    font-size: 700;
+    color: #476a6b;
+    text-decoration: none;
+    /*background-color: #9DEDEE;*/
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin: 15px 0px;
+    
+}
+
+.header .nav-link li:hover {
+    transform: scale(1.03);
+}
+
+.header .nav-link li a:hover {
+    color: #9DEDEE;
+}
+
+/*---------------estilo para body---------------*/
+
+body {
+    text-align: center;
+    display: flexbox;
+    background-color: #42B6B8;
+}
+
+body h2 {
+    color: #9DEDEE;
+    font-size:  30px;
+    margin: 80px;
+}
+
+.Texto_central {
+    color: #9DEDEE;
+    margin-left: 25%;
+    width: 50%;
+    font-size: 25px;
+}
+
+.contenedor {
+    display: flex;
+    height: 80px;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.boton1 {
+    background-color: #476a6b;
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 5px;
+    overflow: hidden;
+    border: 3px solid #9DEDEE;
+    z-index: 1;
+    margin-top: 60px;
+}
+
+.boton1::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    left: 0;
+    bottom: -200%;
+    background-color: #29adaf;
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.boton1:hover::before{
+    bottom:0;
+    border-radius: 0%;
+
+}
+
+/*---------------estilo para footer---------------*/
+footer {
+    background-color: #29adaf;
+    height: 80px;
+    font-size: 15px;
+}
+
+footer p {
+    padding-top: 30px;
+    text-align: center;
+    color: #476a6b;
+    margin-top: 155px;
+}
+
